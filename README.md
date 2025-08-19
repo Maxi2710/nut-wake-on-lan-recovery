@@ -15,7 +15,16 @@ sudo git clone https://github.com/Maxi2710/nut-wake-on-lan-recovery.git && cd nu
 ---
 
 ## Configuration
-Edit config file: ```nano /etc/nut/wakeonlan/config.yml```
+Edit config file: ```nano /etc/nut/wakeonlan/config.yml``` <br/>
 This file consists of two main sections: ```nut``` and ```wol```
 
 ### ```nut``` section
+This defines how to connect to your UPS using NUT (Network UPS Tools). <br/>
+- ```ups_name```: The name of you UPS as defined in you NUT configuration.
+- ```ip```: The IP address (IPv6 or IPv4) of the NUT server running your UPS deamon.
+Example:
+```yaml
+nut:
+  ups_name: "ups"
+  ip: "2001:db8::200"
+```
