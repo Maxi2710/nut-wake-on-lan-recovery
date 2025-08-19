@@ -51,7 +51,7 @@ wol:
     ip_version: 6
     interface: "eth0"
 ```
-<br/>
+---
 
 ## Full Example
 ```yaml
