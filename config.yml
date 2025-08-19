@@ -4,7 +4,7 @@ nut:
 
 
 wol:
-  - mac: "b3:44:bd:da:b4:490"
+  - mac: "b3:44:bd:da:b4:49"
     ip_version: 6
     interface: "eth0"
 
