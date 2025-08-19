@@ -29,7 +29,6 @@ nano /etc/nut/wakeonlan/config.yml
 
 This file consists of two main sections: **`nut`** and **`wol`**.
 
----
 
 ### `nut` section
 Defines how to connect to your UPS using NUT (Network UPS Tools).
@@ -45,7 +44,6 @@ nut:
   ip: "2001:db8::200"
 ```
 
----
 
 ### `wol` section
 Contains a list of clients that should be woken up via Wake-on-LAN after the power is restored. You can define multiple clients by adding multiple entries under `wol`.
