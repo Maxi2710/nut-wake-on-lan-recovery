@@ -1,0 +1,17 @@
+[Unit]
+Description=Daemon that monitors UPS status via NUT and sends Wake-on-LAN packets to clients when power is restored
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/bin/nut-wakeonlan/main.py
+Restart=always
+RestartSec=5
+User=root
+WorkingDirectory=/usr/local/bin/nut-wakeonlan/
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
