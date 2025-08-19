@@ -16,3 +16,6 @@ sudo git clone https://github.com/Maxi2710/nut-wake-on-lan-recovery.git && cd nu
 
 ## Configuration
 Edit config file: ```nano /etc/nut/wakeonlan/config.yml```
+This file consists of two main sections: ```nut``` and ```wol```
+
+### ```nut``` section
