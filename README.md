@@ -42,8 +42,8 @@ Each entry has the following options:
 - ```mac```: The MAC address of the client's network interface.
 - ```ip_version```: Whether to send the WOL packet via IPv6(```6```) or IPv4(```4```).
 - ```interface```: The local network interface used to send the WOL packet (e.g., ```eth0```). <br/>
-  Node: you can obtain the interface name with ```ip a``` <br/>
-  The interface name is only important if you use IPv6
+  **Node**: you can obtain the interface name with ```ip a``` <br/>
+  The interface name is only important if you use IPv6 <br/>
 Example:
 ```yaml
 wol:
