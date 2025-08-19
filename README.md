@@ -54,8 +54,7 @@ Each entry has the following options:
 - `ip_version`: Whether to send the WOL packet via IPv6 (`6`) or IPv4 (`4`).
 - `interface`: The local network interface used to send the WOL packet (e.g., `eth0`).
 > [!NOTE] 
-> You can list available interfaces with `ip a`.
-
+> You can list available interfaces with `ip a`. <br/>
 > The interface name is only required when using IPv6.
 
 Example:
