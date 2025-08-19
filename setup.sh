@@ -5,7 +5,7 @@ set -e
 
 echo "\e[32mInstalling required packeges...\e[0m"
 sudo apt update
-sudo apt install nut-server python3 python3-yaml
+sudo apt install nut-client python3 python3-yaml
 
 echo -e "\e[32mCreating directories...\e[0m"
 mkdir /usr/local/bin/nut-wakeonlan/
