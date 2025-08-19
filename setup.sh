@@ -16,6 +16,9 @@ mv main.py /usr/local/bin/nut-wakeonlan/main.py
 mv nut-wakeonlan.service /etc/systemd/system/nut-wakeonlan.service
 mv config.yml /etc/nut/wakeonlan/config.yml
 
+echo -e "\e[32mMaking 'main.py' executable...\e[0m"
+sudo chmod +x /usr/local/bin/nut-wakeonlan/main.py
+
 echo -e "\e[32mReloading systemd...\e[0m"
 sudo systemctl daemon-reload
 
