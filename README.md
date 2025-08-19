@@ -87,7 +87,7 @@ wol:
 ---
 
 ## Service Management
-After any changes in the config.yml it is required to restart the systemd service:
+After any changes in the `config.yml` it is required to restart the systemd service:
 ```bash
 sudo systemctl restart nut-wakeonlan
 ```
