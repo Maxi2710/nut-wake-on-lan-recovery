@@ -87,11 +87,19 @@ wol:
 ---
 
 ## Service Management
+After any changes in the config.yml it is required to restart the systemd service:
+```bash
+sudo systemctl restart nut-wakeonlan
+```
+
 If installed via `setup.sh`, the daemon should be available as a systemd service. You can control it with the following commands:
 
 ```bash
 # Start the service
 sudo systemctl start nut-wakeonlan
+
+#Restart the service
+sudo systemctl restart nut-wakeonlan
 
 # Enable it at boot
 sudo systemctl enable nut-wakeonlan
