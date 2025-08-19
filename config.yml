@@ -1,0 +1,13 @@
+nut:
+  ups_name: "ups"
+  ip: "2001:db8::200"
+
+
+wol:
+  - mac: "b3:44:bd:da:b4:490"
+    ip_version: 6
+    interface: "eth0"
+
+  - mac: "1c:49:5e:84:62:63"
+    ip_version: 6
+    interface: "eth0"
