@@ -3,18 +3,18 @@
 #Exit script if a command fails
 set -e
 
-echo "\e[32mInstalling required packeges...\e[0m"
+echo -e "\e[32mInstalling required packeges...\e[0m"
 sudo apt update
 sudo apt install nut-client python3 python3-yaml
 
 echo -e "\e[32mCreating directories...\e[0m"
-mkdir /usr/local/bin/nut-wakeonlan/
-mkdir /etc/nut/wakeonlan/
+sudo mkdir /usr/local/bin/nut-wakeonlan/
+sudo mkdir /etc/nut/wakeonlan/
 
 echo -e "\e[32mMoving files to the correct location...\e[0m"
-mv main.py /usr/local/bin/nut-wakeonlan/main.py
-mv nut-wakeonlan.service /etc/systemd/system/nut-wakeonlan.service
-mv config.yml /etc/nut/wakeonlan/config.yml
+sudo mv main.py /usr/local/bin/nut-wakeonlan/main.py
+sudo mv nut-wakeonlan.service /etc/systemd/system/nut-wakeonlan.service
+sudo mv config.yml /etc/nut/wakeonlan/config.yml
 
 echo -e "\e[32mMaking 'main.py' executable...\e[0m"
 sudo chmod +x /usr/local/bin/nut-wakeonlan/main.py
@@ -30,4 +30,4 @@ echo -e "\e[32mSetup complete!\e[0m"
 
 echo -e "\e[32mRemoving repository folder...\e[0m"
 cd ..
-rm -rf nut-wake-on-lan-recovery
+sudo rm -rf nut-wake-on-lan-recovery
