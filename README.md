@@ -114,27 +114,23 @@ systemctl status nut-wakeonlan
 
 
 - **WOL packets not received:**
-- Ensure Wake-on-LAN is enabled in the client's BIOS/UEFI.
-- Check that the correct MAC address is used.
-- For IPv6, make sure the correct interface is specified and the network supports IPv6 multicast.
-
+  - Ensure Wake-on-LAN is enabled in the client's BIOS/UEFI.
+  - Check that the correct MAC address is used.
+  - For IPv6, make sure the correct interface is specified and the network supports IPv6 multicast.
 
 - **UPS connection issues:**
-- Verify the NUT server IP and UPS name are correct.
-- Make sure the NUT service is running and accessible from the daemon host.
-
+  - Verify the NUT server IP and UPS name are correct.
+  - Make sure the NUT service is running and accessible from the daemon host.
 
 - **Logs:**
-- Check system logs with `journalctl -u nut-wakeonlan` for any errors or status messages.
-
+  - Check system logs with `journalctl -u nut-wakeonlan` for any errors or status messages.
 
 - **Network interface:**
-- Use `ip a` to list available network interfaces.
-- The interface parameter is mandatory for IPv6 and optional for IPv4.
-
+  - Use `ip a` to list available network interfaces.
+  - The interface parameter is mandatory for IPv6 and optional for IPv4.
 
 - **Running manually:**
-- You can run the daemon manually for debugging:
-```bash
-sudo python3 /usr/local/bin/nut-wakeonlan.py
-```
+  - You can run the daemon manually for debugging:
+  ```bash
+  sudo python3 /usr/local/bin/nut-wakeonlan.py
+  ```
