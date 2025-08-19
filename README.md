@@ -52,7 +52,8 @@ wol:
     interface: "eth0"
 ```
 <br/>
-## Full Example:
+
+## Full Example
 ```yaml
 nut:
   ups_name: "ups"
