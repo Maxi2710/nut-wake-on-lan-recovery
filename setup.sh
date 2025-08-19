@@ -28,5 +28,6 @@ sudo systemctl start nut-wakeonlan.service
 
 echo -e "\e[32mSetup complete!\e[0m"
 
-echo -e "\e[32mRemoving setup script...\e[0m"
-rm -- "$0"
+echo -e "\e[32mRemoving repository folder...\e[0m"
+cd ..
+rm -rf nut-wake-on-lan-recovery
