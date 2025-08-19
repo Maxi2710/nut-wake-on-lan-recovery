@@ -55,6 +55,7 @@ Each entry has the following options:
 - `interface`: The local network interface used to send the WOL packet (e.g., `eth0`).
 > [!NOTE] 
 > You can list available interfaces with `ip a`.
+
 > The interface name is only required when using IPv6.
 
 Example:
