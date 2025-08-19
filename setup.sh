@@ -1,3 +1,4 @@
+sudo apt install nut-server
 sudo apt install python3
 sudo apt install python3-yaml
 
